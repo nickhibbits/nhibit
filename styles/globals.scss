@@ -1,0 +1,30 @@
+@use "variables.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  background-color: variables.$color-neutral-900;
+}
+
+.flex {
+  display: flex;
+
+  &_column {
+    flex-direction: column;
+  }
+
+  &_center {
+    justify-content: center;
+    align-items: center;
+  }
+}
