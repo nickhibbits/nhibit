@@ -1,9 +1,19 @@
 .main {
   min-height: 100dvh;
+  grid-template-columns: 40% 60%;
+}
+
+.container_1 {
+  border-right: solid 1px white;
+}
+
+.logo_container {
+  align-items: center;
 }
 
 .logo_wrapper {
   width: 100%;
+  padding-left: 2rem;
 
   > div {
     position: unset !important;

@@ -16,6 +16,10 @@ body {
   background-color: variables.$color-neutral-900;
 }
 
+.grid {
+  display: grid;
+}
+
 .flex {
   display: flex;
 
