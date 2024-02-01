@@ -33,17 +33,18 @@
   object-fit: contain;
   position: relative !important;
   overflow: hidden;
-  bottom: 3rem;
+  // bottom: 3rem;
 
   &_desktop {
     position: relative;
     width: 100% !important;
     height: unset !important;
-    bottom: 3rem;
+    // bottom: 3rem;
   }
 }
 .content_wrapper {
-  z-index: 2;
+  z-index: 1;
+  padding-top: 3rem;
 }
 
 .logo_container {

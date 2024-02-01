@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Quattrocento_Sans } from "next/font/google";
 import "@/styles/globals.scss";
 import Navbar from "@/components/Navbars/Navbar/Navbar";
 import NavbarMobile from "@/components/Navbars/NavbarMobile/NavbarMobile";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Quattrocento_Sans({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "NHIBIT",

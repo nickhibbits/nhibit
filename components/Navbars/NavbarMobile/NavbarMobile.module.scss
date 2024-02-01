@@ -4,6 +4,7 @@
 @use "@/styles/glassmorphism.scss";
 
 .nav {
+  width: 100vw;
   @include navbarMixins.primaryStyle;
   display: relative;
 
@@ -33,10 +34,10 @@
 
 .options_container {
   position: fixed;
-  inset: 0 0 0 15%;
+  inset: 0 0 0 0;
+  background-color: variables.$bg_dark_transparent_2;
 
   @include glassmorphism.glassmorphismBase;
-  z-index: 3;
 
   @include mediaQueries.tablet {
     inset: 0 0 0 30%;
@@ -48,6 +49,7 @@
 }
 
 .options_wrapper {
+  z-index: 5;
   display: flex;
   flex-direction: column;
   align-items: center;

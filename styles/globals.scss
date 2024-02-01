@@ -14,15 +14,25 @@
 
 body {
   background-color: variables.$color-neutral-900;
+  color: whitesmoke;
   overflow: hidden;
 }
 
 header {
-  position: sticky;
+  position: absolute;
   top: 0;
   z-index: 2;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
 .grid {
   display: grid;
 }

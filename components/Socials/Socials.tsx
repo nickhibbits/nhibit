@@ -6,7 +6,7 @@ import spotify from "@/public/social_icons/spotify-dark-svgrepo-com.svg";
 // import youtube from "@/public/social_icons/youtube-svgrepo-com.svg";
 
 function Socials() {
-  const height = "35";
+  const height = "55";
   const width = "35";
   return (
     <div className={`${styles.socials_wrapper} flex`}>
@@ -22,13 +22,16 @@ function Socials() {
           className={styles.image}
         />
       </a>
-      <a href="https://soundcloud.com/nhibit" className={styles.a}>
+      <a
+        href="https://soundcloud.com/nhibit"
+        className={`${styles.a} ${styles.sc_anchor}`}
+      >
         <Image
-          height={55}
+          height={60}
           width={70}
           src={soundcloud}
           alt={"soundcloud icon"}
-          className={`${styles.image} ${styles.soundcloud_icon}`}
+          className={`${styles.image} ${styles.sc_icon}`}
         />
       </a>
       <a href="https://instagram.com/nhibit" className={styles.a}>
