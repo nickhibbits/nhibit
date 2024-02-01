@@ -5,8 +5,7 @@ import Socials from "@/components/Socials/Socials";
 
 export default function Home() {
   return (
-    <main className={`${styles.main} ${styles.padding_wrapper} grid`}>
-      <section className={styles.container_1}></section>
+    <main className={`${styles.main} ${styles.padding_wrapper} flex`}>
       <section className={`${styles.logo_container} flex`}>
         <div className={`${styles.logo_wrapper} flex`}>
           {/* <div className={`${styles.logo_wrapper} ${styles.glitch} flex`}> */}
