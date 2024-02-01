@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .bg_image_wrapper {
@@ -33,10 +33,13 @@
   object-fit: contain;
   position: relative !important;
   overflow: hidden;
+  bottom: 3rem;
 
   &_desktop {
+    position: relative;
     width: 100% !important;
     height: unset !important;
+    bottom: 3rem;
   }
 }
 .content_wrapper {
@@ -57,8 +60,11 @@
 
 .logo_wrapper {
   width: 100%;
-  padding-left: 2rem;
-
   height: 8rem;
-  width: 23rem;
+  width: 20rem;
+
+  @include mediaQueries.tablet {
+    height: 10rem;
+    width: 23rem;
+  }
 }
