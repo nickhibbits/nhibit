@@ -8,13 +8,7 @@ export default function Home() {
     <main className={`${styles.main} ${styles.padding_wrapper} flex`}>
       <section className={`${styles.logo_container} flex`}>
         <div className={`${styles.logo_wrapper} flex`}>
-          {/* <div className={`${styles.logo_wrapper} ${styles.glitch} flex`}> */}
           <Image src={logo} alt={"NHIBIT logo"} className={styles.image} />
-          {/* <div className={styles.glitch__layers}>
-            <div className={styles.glitch__layer} />
-            <div className={styles.glitch__layer} />
-            <div className={styles.glitch__layer} />
-          </div> */}
         </div>
         <Socials />
       </section>

@@ -1,0 +1,14 @@
+@use "@/styles/mediaQueries.scss";
+
+.padding_wrapper {
+  padding-inline: 1rem;
+  @include mediaQueries.tablet {
+    padding-inline: 2rem;
+  }
+  @include mediaQueries.desktop {
+    padding-inline: 13.25rem;
+  }
+  @include mediaQueries.bigScreen {
+    padding-inline: 18rem;
+  }
+}

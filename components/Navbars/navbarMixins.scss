@@ -1,0 +1,9 @@
+@use "@/styles/variables.scss";
+@use "@/styles/glassmorphism.scss";
+
+@mixin primaryStyle {
+  // @include glassmorphism.glassmorphismBase;
+  border-bottom: glassmorphism.$glassmorphismOutline;
+  height: variables.$nav-height;
+  font-size: variables.$fs-500;
+}

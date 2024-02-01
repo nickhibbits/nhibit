@@ -1,0 +1,57 @@
+@use "@/styles/mediaQueries.scss";
+@use "@/components/Navbars/navbarMixins.scss";
+@use "@/styles/variables.scss";
+@use "@/styles/glassmorphism.scss";
+
+.nav {
+  @include navbarMixins.primaryStyle;
+  display: relative;
+
+  @include mediaQueries.tablet-large {
+    display: none;
+  }
+}
+
+.svgWrapper {
+  &_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 4;
+    height: 100%;
+  }
+
+  &_x {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: variables.$nav-height;
+  }
+}
+
+.options_container {
+  position: fixed;
+  inset: 0 0 0 15%;
+
+  @include glassmorphism.glassmorphismBase;
+  z-index: 3;
+
+  @include mediaQueries.tablet {
+    inset: 0 0 0 30%;
+  }
+
+  @include mediaQueries.tablet-large {
+    display: none;
+  }
+}
+
+.options_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  font-size: variables.$fs-400;
+}
