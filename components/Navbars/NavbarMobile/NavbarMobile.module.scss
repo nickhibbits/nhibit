@@ -39,10 +39,6 @@
 
   @include glassmorphism.glassmorphismBase;
 
-  @include mediaQueries.tablet {
-    inset: 0 0 0 30%;
-  }
-
   @include mediaQueries.tablet-large {
     display: none;
   }
@@ -54,6 +50,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80%;
-  font-size: variables.$fs-400;
+  gap: 2rem;
+  font-size: variables.$fs-700;
+}
+
+.option_socials_wrapper {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.anchor {
+  @include navbarMixins.optionStyle;
 }

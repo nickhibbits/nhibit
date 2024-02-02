@@ -7,6 +7,7 @@ import navbarMobileStyles from "@/components/Navbars/NavbarMobile/NavbarMobile.m
 import layoutStyles from "@/styles/layout.module.scss";
 
 import Link from "next/link";
+import SocialsMobile from "@/components/Socials/SocialsMobile/SocialsMobile";
 
 function NavbarMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,15 +33,26 @@ function NavbarMobile() {
           >
             X
           </div>
-          <ul className={navbarMobileStyles.options_wrapper}>
-            {navOptions.map((option, i) => {
-              return (
-                <li className={navbarMobileStyles.option} key={i}>
-                  <Link href={option.toLowerCase()}>{option}</Link>
-                </li>
-              );
-            })}
-          </ul>
+          <div className={navbarMobileStyles.option_socials_wrapper}>
+            <ul className={navbarMobileStyles.options_wrapper}>
+              {navOptions.map((option, i) => {
+                return (
+                  <li className={navbarMobileStyles.option} key={i}>
+                    <Link
+                      href={option.toLowerCase()}
+                      className={`${navbarMobileStyles.anchor} flex`}
+                    >
+                      <p className={navbarMobileStyles.num}>{i + 1}.</p>
+                      <p className={navbarMobileStyles.option_text}>
+                        {option.toUpperCase()}
+                      </p>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+            <SocialsMobile />
+          </div>
         </div>
       )}
     </>
