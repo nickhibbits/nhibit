@@ -21,7 +21,11 @@ function NavbarMobile() {
           className={navbarMobileStyles.svgWrapper_menu}
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          menuSVG
+          <button className={navbarMobileStyles.hamburger} type="button">
+            {/* <span className={navbarMobileStyles.hamburger_box}> */}
+            <span className={navbarMobileStyles.hamburger_inner}></span>
+            {/* </span> */}
+          </button>
         </div>
       </nav>
 
