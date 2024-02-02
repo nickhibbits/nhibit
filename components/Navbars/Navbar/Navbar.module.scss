@@ -1,5 +1,6 @@
 @use "@/styles/mediaQueries.scss";
 @use "@/components/Navbars/navbarMixins.scss";
+@use "@/styles/variables.scss";
 
 .nav {
   @include navbarMixins.primaryStyle;
@@ -17,5 +18,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap: 5rem;
+  gap: 6rem;
+}
+
+.anchor {
+  gap: 0.2rem;
+  .num {
+    font-size: calc(variables.$fs-300 / 1.4);
+  }
 }

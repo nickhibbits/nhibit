@@ -2,7 +2,7 @@
 
 .socials_wrapper {
   display: none;
-  @include mediaQueries.desktop {
+  @include mediaQueries.tablet-large {
     display: inline;
   }
 }

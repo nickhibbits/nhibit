@@ -2,11 +2,6 @@
 @use "@/styles/glassmorphism.scss";
 
 @mixin primaryStyle {
-  // @include glassmorphism.glassmorphismBase;
-  border-bottom: glassmorphism.$glassmorphismOutline;
   height: variables.$nav-height;
   font-size: variables.$fs-300;
-  background-color: variables.$bg_dark_transparent_1;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(10px);
 }

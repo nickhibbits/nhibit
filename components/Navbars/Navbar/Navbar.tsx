@@ -11,7 +11,15 @@ function Navbar() {
         {navOptions.map((option, i) => {
           return (
             <li className={navbarStyles.option} key={i}>
-              <Link href={option.toLowerCase()}>{option}</Link>
+              <Link
+                href={option.toLowerCase()}
+                className={`${navbarStyles.anchor} flex`}
+              >
+                <p className={navbarStyles.num}>{i + 1}.</p>
+                <p className={navbarStyles.option_text}>
+                  {option.toUpperCase()}
+                </p>
+              </Link>
             </li>
           );
         })}

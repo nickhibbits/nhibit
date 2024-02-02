@@ -34,11 +34,13 @@
   position: relative !important;
   overflow: hidden;
   // bottom: 3rem;
+  filter: brightness(60%);
 
   &_desktop {
     position: relative;
     width: 100% !important;
     height: unset !important;
+    filter: brightness(60%);
     // bottom: 3rem;
   }
 }
