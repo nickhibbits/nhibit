@@ -1,9 +1,20 @@
 @use "@/styles/variables.scss";
 @use "@/styles/glassmorphism.scss";
+@use "@/styles/mediaQueries";
 
 @mixin primaryStyle {
-  height: variables.$nav-height;
+  height: variables.$nav-height-mobile;
   font-size: variables.$fs-300;
+
+  @include mediaQueries.tablet {
+    height: variables.$nav-height-tablet;
+  }
+  @include mediaQueries.tablet-large {
+    height: variables.$nav-height-tablet-large;
+  }
+  @include mediaQueries.desktop {
+    height: variables.$nav-height-desktop;
+  }
 }
 
 @mixin optionStyle {
