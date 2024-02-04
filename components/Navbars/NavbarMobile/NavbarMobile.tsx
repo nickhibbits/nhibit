@@ -8,24 +8,19 @@ import layoutStyles from "@/styles/layout.module.scss";
 
 import Link from "next/link";
 import SocialsMobile from "@/components/Socials/SocialsMobile/SocialsMobile";
+import Hamburger from "@/components/Hamburger/Hamburger";
 
 function NavbarMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
-      <nav
-        className={`${navbarMobileStyles.nav} ${layoutStyles.padding_wrapper}`}
-      >
+      <nav className={navbarMobileStyles.nav}>
         <div
-          className={navbarMobileStyles.svgWrapper_menu}
-          onClick={() => setMenuOpen(!menuOpen)}
+          className={`${navbarMobileStyles.svgWrapper_menu} ${layoutStyles.padding_wrapper}`}
+          // onClick={() => setMenuOpen(!menuOpen)}
         >
-          <button className={navbarMobileStyles.hamburger} type="button">
-            {/* <span className={navbarMobileStyles.hamburger_box}> */}
-            <span className={navbarMobileStyles.hamburger_inner}></span>
-            {/* </span> */}
-          </button>
+          <Hamburger />
         </div>
       </nav>
 
@@ -34,9 +29,7 @@ function NavbarMobile() {
           <div
             className={`${navbarMobileStyles.svgWrapper_x} ${layoutStyles.padding_wrapper}`}
             onClick={() => setMenuOpen(!menuOpen)}
-          >
-            X
-          </div>
+          ></div>
           <div className={navbarMobileStyles.option_socials_wrapper}>
             <ul className={navbarMobileStyles.options_wrapper}>
               {navOptions.map((option, i) => {
