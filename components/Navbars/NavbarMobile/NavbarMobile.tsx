@@ -18,7 +18,7 @@ function NavbarMobile() {
       <nav className={navbarMobileStyles.nav}>
         <div
           className={`${navbarMobileStyles.svgWrapper_menu} ${layoutStyles.padding_wrapper}`}
-          // onClick={() => setMenuOpen(!menuOpen)}
+          onClick={() => setMenuOpen(!menuOpen)}
         >
           <Hamburger />
         </div>
@@ -26,10 +26,6 @@ function NavbarMobile() {
 
       {menuOpen && (
         <div className={navbarMobileStyles.options_container}>
-          <div
-            className={`${navbarMobileStyles.svgWrapper_x} ${layoutStyles.padding_wrapper}`}
-            onClick={() => setMenuOpen(!menuOpen)}
-          ></div>
           <div className={navbarMobileStyles.option_socials_wrapper}>
             <ul className={navbarMobileStyles.options_wrapper}>
               {navOptions.map((option, i) => {

@@ -6,6 +6,8 @@
 
 .nav {
   width: 100vw;
+  z-index: 5;
+  position: relative;
   @include navbarMixins.primaryStyle;
   display: relative;
 
@@ -20,16 +22,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    z-index: 4;
     height: 100%;
-  }
-
-  &_x {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    height: variables.$nav-height;
   }
 }
 
@@ -37,6 +30,7 @@
   position: fixed;
   inset: 0 0 0 0;
   background-color: variables.$bg_dark_transparent_2;
+  z-index: 4;
 
   @include glassmorphism.glassmorphismBase;
 
@@ -46,7 +40,7 @@
 }
 
 .options_wrapper {
-  z-index: 5;
+  // z-index: 3;z
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,7 +50,7 @@
 }
 
 .option_socials_wrapper {
-  height: 90%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
