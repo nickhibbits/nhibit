@@ -12,9 +12,11 @@ import Hamburger from "@/components/Hamburger/Hamburger";
 
 function NavbarMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [active, setIsActive] = useState(false);
 
   const handleMenuOpen = () => {
     setMenuOpen(!menuOpen);
+    setIsActive((curr) => !curr);
   };
 
   return (
@@ -24,7 +26,7 @@ function NavbarMobile() {
           className={`${navbarMobileStyles.svgWrapper_menu} ${layoutStyles.padding_wrapper}`}
           onClick={() => handleMenuOpen()}
         >
-          <Hamburger />
+          <Hamburger active={active} />
         </div>
       </nav>
 
@@ -40,6 +42,7 @@ function NavbarMobile() {
                   <Link
                     href={option.toLowerCase()}
                     className={`${navbarMobileStyles.anchor} flex`}
+                    onClick={() => handleMenuOpen()}
                   >
                     <p className={navbarMobileStyles.num}>{i + 1}.</p>
                     <p className={navbarMobileStyles.option_text}>
