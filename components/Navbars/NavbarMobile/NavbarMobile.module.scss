@@ -16,6 +16,25 @@
   }
 }
 
+.logo_wrapper {
+  width: 16rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+  @include mediaQueries.tablet {
+    width: 20rem;
+  }
+}
+
+.image {
+  position: absolute;
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
 .svgWrapper {
   &_menu {
     display: flex;

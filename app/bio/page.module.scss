@@ -1,0 +1,22 @@
+.main {
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  // overflow: hidden;
+}
+
+.image_wrapper {
+  border: solid 1px red;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  position: relative !important;
+  clip-path: inset(0 0 35% 0);
+}
