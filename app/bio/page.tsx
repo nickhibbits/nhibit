@@ -1,14 +1,21 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
-import headshot from "@/public/headshot.jpeg";
+import layoutStyles from "@/styles/layout.module.scss";
+import dj_2 from "@/public/dj_2.jpg";
 
 export default function Home() {
   return (
     <main className={`${styles.main} flex `}>
       <div className={styles.image_wrapper}>
-        <Image className={styles.image} src={headshot} alt="DJ NHIBIT" />
+        <Image
+          className={styles.image}
+          src={dj_2}
+          width={2000}
+          alt="DJ NHIBIT"
+        />
       </div>
-      <section>
+      <section className={layoutStyles.padding_wrapper}>
+        <h2>About</h2>
         <p className={styles.text}>
           Drawing creative inspiration from his native west coast house scene
           and the minimal tech sound out of the UK, NHIBIT combines tight

@@ -1,3 +1,5 @@
+@use "@/styles/mediaQueries.scss";
+
 .main {
   height: 100dvh;
   justify-content: center;
@@ -5,18 +7,34 @@
   position: relative;
   flex-direction: column;
   overflow-y: scroll;
-
-  // overflow: hidden;
+  overflow-x: hidden;
 }
 
 .image_wrapper {
-  border: solid 1px red;
+  z-index: 1;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0)
+  );
+
+  @include mediaQueries.tablet-large {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+  }
 }
 
 .image {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
   position: relative !important;
-  clip-path: inset(0 0 35% 0);
+  object-fit: contain;
+  overflow: hidden;
+  right: 50px;
+  bottom: 400px;
+
+  @include mediaQueries.tablet-large {
+    bottom: 100px;
+  }
 }

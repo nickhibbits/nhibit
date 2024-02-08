@@ -30,18 +30,16 @@
 }
 
 .bg_image {
-  object-fit: contain;
   position: relative !important;
+  object-fit: contain;
   overflow: hidden;
-  // bottom: 3rem;
   filter: brightness(60%);
 
   &_desktop {
     position: relative;
-    width: 100% !important;
+    width: 105% !important;
     height: unset !important;
     filter: brightness(60%);
-    // bottom: 3rem;
   }
 }
 .content_wrapper {
