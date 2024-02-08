@@ -17,13 +17,14 @@
 }
 
 .logo_wrapper {
-  width: 16rem;
+  width: 12rem;
+  padding-top: 10px;
   position: absolute;
   display: flex;
   align-items: center;
 
   @include mediaQueries.tablet {
-    width: 20rem;
+    padding-top: 20px;
   }
 }
 

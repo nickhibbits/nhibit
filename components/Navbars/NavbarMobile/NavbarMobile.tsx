@@ -23,7 +23,9 @@ function NavbarMobile() {
 
   return (
     <>
-      <nav className={navbarMobileStyles.nav}>
+      <nav
+        className={`${navbarMobileStyles.nav} ${layoutStyles.padding_wrapper}`}
+      >
         <div className={`${navbarMobileStyles.logo_wrapper}`}>
           <Image
             src={logo}
@@ -32,7 +34,7 @@ function NavbarMobile() {
           />
         </div>
         <div
-          className={`${navbarMobileStyles.svgWrapper_menu} ${layoutStyles.padding_wrapper}`}
+          className={`${navbarMobileStyles.svgWrapper_menu} `}
           onClick={() => handleMenuOpen()}
         >
           <Hamburger active={active} />
