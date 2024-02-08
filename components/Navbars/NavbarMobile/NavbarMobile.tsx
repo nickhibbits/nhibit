@@ -26,13 +26,15 @@ function NavbarMobile() {
       <nav
         className={`${navbarMobileStyles.nav} ${layoutStyles.padding_wrapper}`}
       >
-        <div className={`${navbarMobileStyles.logo_wrapper}`}>
-          <Image
-            src={logo}
-            alt={"NHIBIT logo"}
-            className={navbarMobileStyles.image}
-          />
-        </div>
+        <Link href={"/"}>
+          <div className={`${navbarMobileStyles.logo_wrapper}`}>
+            <Image
+              src={logo}
+              alt={"NHIBIT logo"}
+              className={navbarMobileStyles.image}
+            />
+          </div>
+        </Link>
         <div
           className={`${navbarMobileStyles.svgWrapper_menu} `}
           onClick={() => handleMenuOpen()}

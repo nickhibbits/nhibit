@@ -15,7 +15,7 @@ export default function Home() {
         />
       </div>
       <section className={layoutStyles.padding_wrapper}>
-        <h2>About</h2>
+        <h1>About</h1>
         <p className={styles.text}>
           Drawing creative inspiration from his native west coast house scene
           and the minimal tech sound out of the UK, NHIBIT combines tight

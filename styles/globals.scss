@@ -16,12 +16,17 @@ body {
   background-color: variables.$color-neutral-900;
   color: rgb(216, 216, 216);
   overflow: scroll;
+  line-height: 1.5;
 }
 
 header {
   position: absolute;
   top: 0;
   z-index: 2;
+}
+
+h1 {
+  font-size: variables.$fs-800;
 }
 
 a {
