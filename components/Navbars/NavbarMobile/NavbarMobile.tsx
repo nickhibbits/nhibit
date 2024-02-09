@@ -12,7 +12,7 @@ import SocialsMobile from "@/components/Socials/SocialsMobile/SocialsMobile";
 import Hamburger from "@/components/Hamburger/Hamburger";
 import Image from "next/image";
 
-function NavbarMobile() {
+function NavbarMobile({ hideLogo }: { hideLogo: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setIsActive] = useState(false);
 
@@ -27,7 +27,11 @@ function NavbarMobile() {
         className={`${navbarMobileStyles.nav} ${layoutStyles.padding_wrapper}`}
       >
         <Link href={"/"}>
-          <div className={`${navbarMobileStyles.logo_wrapper}`}>
+          <div
+            className={`${hideLogo && navbarMobileStyles.hide} ${
+              navbarMobileStyles.logo_wrapper
+            }`}
+          >
             <Image
               src={logo}
               alt={"NHIBIT logo"}
