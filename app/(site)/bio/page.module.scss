@@ -63,9 +63,9 @@
 }
 
 .text_wrapper {
-  // padding-inline: 2rem;
-  // // padding-inline: 5rem;
-  // @include mediaQueries.tablet-large {
-  //   padding-inline: 8rem;
-  // }
+  padding-bottom: 30px;
+
+  @include mediaQueries.tablet-large {
+    padding-bottom: 0;
+  }
 }

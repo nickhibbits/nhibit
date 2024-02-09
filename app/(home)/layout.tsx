@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={oxygen.className}>
         <header>
-          <Navbar />
+          <Navbar displayLogo={false} />
           <NavbarMobile />
         </header>
         {children}

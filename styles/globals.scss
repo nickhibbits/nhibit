@@ -1,4 +1,5 @@
 @use "variables.scss";
+@use "mediaQueries.scss";
 
 *,
 *::before,
@@ -26,8 +27,11 @@ header {
 }
 
 h1 {
-  font-size: variables.$fs-800;
-  // font-weight: variables.$fw-700;
+  font-size: variables.$fs-700;
+
+  @include mediaQueries.tablet {
+    font-size: variables.$fs-800;
+  }
 }
 
 a {

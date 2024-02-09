@@ -17,7 +17,7 @@ export default function Home() {
       <section
         className={`${styles.text_wrapper} ${oxygen.className} ${layoutStyles.padding_wrapper}`}
       >
-        <h1>About</h1>
+        <h1 className="h1">Bio</h1>
         <p className={lf.className}>
           Drawing creative inspiration from his native west coast house scene
           and the minimal tech sound out of the UK, NHIBIT combines tight
