@@ -24,7 +24,7 @@
   align-items: center;
 
   @include mediaQueries.tablet {
-    padding-top: 20px;
+    padding-top: 15px;
   }
 }
 
@@ -60,7 +60,7 @@
 
   @include glassmorphism.glassmorphismBase;
 
-  @include mediaQueries.tablet-large {
+  @include mediaQueries.desktop {
     display: none;
   }
 }

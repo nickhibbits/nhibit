@@ -44,17 +44,21 @@
   }
 
   @include mediaQueries.tablet-large {
-    width: 120%;
-    right: 50px;
-    bottom: 500px;
-    // width: 120%;
+    width: 150%;
+    right: 110px;
+    bottom: 400px;
   }
 
   @include mediaQueries.desktop {
     width: 120%;
     right: 50px;
-    bottom: 400px;
-    // width: 120%;
+    bottom: 420px;
+  }
+
+  @include mediaQueries.bigScreen {
+    width: 100%;
+    // right: 50px;
+    bottom: 350px;
   }
 }
 
