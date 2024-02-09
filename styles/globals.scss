@@ -16,7 +16,8 @@
 body {
   background-color: variables.$color-neutral-900;
   color: rgb(216, 216, 216);
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   line-height: 1.8;
 }
 

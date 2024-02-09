@@ -8,7 +8,7 @@ import { Libre_Franklin, Oxygen } from "next/font/google";
 const lf = Libre_Franklin({ weight: "300", subsets: ["latin"] });
 const oxygen = Oxygen({ weight: "700", subsets: ["latin"] });
 
-export default function Home() {
+export default function Bio() {
   return (
     <main className={`${styles.main} grid `}>
       <div className={styles.image_wrapper}>
