@@ -3,6 +3,7 @@ import { Oxygen } from "next/font/google";
 import "@/styles/globals.scss";
 import Navbar from "@/components/Navbars/Navbar/Navbar";
 import NavbarMobile from "@/components/Navbars/NavbarMobile/NavbarMobile";
+import Footer from "@/components/Footer/Footer";
 
 const oxygen = Oxygen({ weight: "400", subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
           <NavbarMobile hideLogo={true} />
         </header>
         {children}
+        <Footer />
       </body>
     </html>
   );
