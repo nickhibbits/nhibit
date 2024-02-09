@@ -7,7 +7,7 @@
   display: none;
   width: 100vw;
 
-  @include mediaQueries.tablet-large {
+  @include mediaQueries.desktop {
     display: block;
   }
 }

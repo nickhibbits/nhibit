@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Quattrocento_Sans } from "next/font/google";
+import { Oxygen } from "next/font/google";
 import "@/styles/globals.scss";
 import Navbar from "@/components/Navbars/Navbar/Navbar";
 import NavbarMobile from "@/components/Navbars/NavbarMobile/NavbarMobile";
 
-const inter = Quattrocento_Sans({ weight: "400", subsets: ["latin"] });
+const oxygen = Oxygen({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "NHIBIT",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={oxygen.className}>
         <header>
           <Navbar />
           <NavbarMobile />

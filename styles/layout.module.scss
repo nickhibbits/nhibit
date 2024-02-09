@@ -6,9 +6,10 @@
     padding-inline: 2rem;
   }
   @include mediaQueries.desktop {
-    padding-inline: 13.25rem;
+    padding-inline: 8rem;
+    // padding-inline: 13.25rem;
   }
   @include mediaQueries.bigScreen {
-    padding-inline: 18rem;
+    padding-inline: 15rem;
   }
 }

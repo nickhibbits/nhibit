@@ -1,18 +1,25 @@
 @use "@/styles/mediaQueries.scss";
 
 .main {
-  height: 110dvh;
+  height: 130dvh;
   justify-content: center;
   align-items: center;
   position: relative;
-  flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
+
+  @include mediaQueries.tablet-large {
+    grid-template-columns: 40% 60%;
+    height: 100dvh;
+  }
 }
 
 .image_wrapper {
   z-index: 1;
+  // border: solid 1px red;
   overflow: hidden;
+  height: 100%;
+  width: 100%;
   mask-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 1) 60%,
@@ -20,8 +27,6 @@
   );
 
   @include mediaQueries.tablet-large {
-    display: block;
-    position: absolute;
     z-index: 1;
     overflow: hidden;
   }
@@ -29,12 +34,34 @@
 
 .image {
   position: relative !important;
+  width: 100%;
   object-fit: contain;
   overflow: hidden;
-  right: 50px;
-  bottom: 400px;
+  bottom: 535px;
+
+  @include mediaQueries.tablet {
+    bottom: 370px;
+  }
 
   @include mediaQueries.tablet-large {
-    bottom: 100px;
+    width: 120%;
+    right: 50px;
+    bottom: 500px;
+    // width: 120%;
   }
+
+  @include mediaQueries.desktop {
+    width: 120%;
+    right: 50px;
+    bottom: 400px;
+    // width: 120%;
+  }
+}
+
+.text_wrapper {
+  // padding-inline: 2rem;
+  // // padding-inline: 5rem;
+  // @include mediaQueries.tablet-large {
+  //   padding-inline: 8rem;
+  // }
 }

@@ -11,7 +11,7 @@
   @include navbarMixins.primaryStyle;
   display: relative;
 
-  @include mediaQueries.tablet-large {
+  @include mediaQueries.desktop {
     display: none;
   }
 }
