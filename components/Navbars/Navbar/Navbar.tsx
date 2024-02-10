@@ -8,22 +8,10 @@ import layoutStyles from "@/styles/layout.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/NHIBIT_Av03-White.png";
-import { useState } from "react";
+import { useColorChange } from "@/app/hooks/useColorChange";
 
 function Navbar({ displayLogo }: { displayLogo: boolean }) {
-  const [colorChange, setColorchange] = useState(false);
-
-  const changeNavbarColor = () => {
-    if (window.scrollY >= 80) {
-      setColorchange(true);
-    } else {
-      setColorchange(false);
-    }
-  };
-
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", changeNavbarColor);
-  }
+  const colorChange = useColorChange();
 
   return (
     <nav className={` ${navbarStyles.nav} ${layoutStyles.padding_wrapper}`}>
