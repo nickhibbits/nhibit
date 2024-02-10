@@ -1,11 +1,12 @@
 @use "@/styles/mediaQueries.scss";
 @use "@/components/Navbars/navbarMixins.scss";
 @use "@/styles/variables.scss";
-
+@use "@/styles/glassmorphism.scss";
 .nav {
   @include navbarMixins.primaryStyle;
   display: none;
   width: 100vw;
+  position: relative;
 
   @include mediaQueries.desktop {
     display: block;
@@ -13,12 +14,28 @@
 }
 
 .options_wrapper {
+  // position: absolute;
   display: flex;
   height: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   gap: 6rem;
+  z-index: 2;
+}
+.color_change {
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: -1;
+  background-color: rgba(3, 3, 3, 0.9);
+  @include glassmorphism.glassmorphismBase;
+
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+
+  &[data-scroll="true"] {
+    transform: translateY(0%);
+  }
 }
 
 .anchor {

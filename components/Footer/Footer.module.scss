@@ -4,7 +4,8 @@
 .footer {
   gap: 2rem;
   min-height: 20rem;
-  padding: 1rem 0 2rem 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   border-top: solid 0.5px rgba(#ffffff, 0.4);
   background-color: variables.$color-neutral-600;
   @include mediaQueries.tablet {
