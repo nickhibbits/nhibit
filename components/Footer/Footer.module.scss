@@ -6,7 +6,7 @@
   min-height: 20rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
-  border-top: solid 0.5px rgba(#ffffff, 0.4);
+  border-top: solid 0.3px variables.$color-neutral-200;
   background-color: variables.$color-neutral-600;
   @include mediaQueries.tablet {
     grid-auto-flow: row;

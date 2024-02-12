@@ -3,6 +3,7 @@ import styles from "@/components/Socials/SocialsMobile/SocialsMobile.module.scss
 import instagram from "@/public/social_icons/instagram-svgrepo-com.svg";
 import soundcloud from "@/public/social_icons/soundcloud-svgrepo-com.svg";
 import spotify from "@/public/social_icons/spotify-dark-svgrepo-com.svg";
+import facebook from "@/public/social_icons/facebook-svgrepo-com.svg";
 // import youtube from "@/public/social_icons/youtube-svgrepo-com.svg";
 
 function SocialsMobile() {
@@ -24,7 +25,7 @@ function SocialsMobile() {
       </a>
       <a
         href="https://soundcloud.com/nhibit"
-        className={`${styles.a} ${styles.sc_anchor}`}
+        className={`${styles.a} ${styles.sc_wrapper}`}
       >
         <Image
           height={60}
@@ -43,13 +44,18 @@ function SocialsMobile() {
           className={styles.image}
         />
       </a>
-      {/* <Image
-        height={height}
-        width={width}
-        src={youtube}
-        alt={"youtube icon"}
-        className={styles.image}
-      /> */}
+      <a
+        href="https://www.facebook.com/profile.php?id=61556598864095"
+        className={`${styles.fb_wrapper} ${styles.a}`}
+      >
+        <Image
+          height={60}
+          width={45}
+          src={facebook}
+          alt={"facebook icon"}
+          className={`${styles.image} ${styles.fb_icon}`}
+        />
+      </a>
     </div>
   );
 }
