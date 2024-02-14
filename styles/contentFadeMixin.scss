@@ -1,8 +1,10 @@
-@mixin content_fade {
+$standard_delay: 0.5s;
+
+@mixin content_fade($delay) {
   // border: solid 1px red;
   transform: translateY(50%);
   opacity: 0;
-  transition: all 0.5s;
+  transition: all $delay;
 
   &[data-visible="true"] {
     transform: translateY(0%);
