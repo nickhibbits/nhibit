@@ -1,0 +1,14 @@
+@use "@/styles/mediaQueries.scss";
+@use "@/styles/contentFadeMixin.scss";
+
+.bio_content {
+  padding-bottom: 30px;
+
+  @include mediaQueries.tablet-large {
+    padding-bottom: 0;
+  }
+
+  @include contentFadeMixin.content_fade(
+    $delay: calc(contentFadeMixin.$standard_delay)
+  );
+}
