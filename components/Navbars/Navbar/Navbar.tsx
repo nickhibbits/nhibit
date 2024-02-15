@@ -8,7 +8,7 @@ import layoutStyles from "@/styles/layout.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/NHIBIT_Av03-White.png";
-import { useColorChange } from "@/app/hooks/useColorChange";
+import { useColorChange } from "@/hooks/useColorChange";
 
 function Navbar({ displayLogo }: { displayLogo: boolean }) {
   const colorChange = useColorChange();

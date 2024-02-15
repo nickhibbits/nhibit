@@ -12,7 +12,7 @@ import Link from "next/link";
 import SocialsMobile from "@/components/Socials/SocialsMobile/SocialsMobile";
 import Hamburger from "@/components/Hamburger/Hamburger";
 import Image from "next/image";
-import { useColorChange } from "@/app/hooks/useColorChange";
+import { useColorChange } from "@/hooks/useColorChange";
 
 function NavbarMobile({ hideLogo }: { hideLogo: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false);

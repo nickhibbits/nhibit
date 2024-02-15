@@ -3,7 +3,7 @@ import layoutStyles from "@/styles/layout.module.scss";
 import styles from "@/components/BioContent/BioContent.module.scss";
 
 import { Libre_Franklin, Oxygen } from "next/font/google";
-import { useEnableFadeTransition } from "@/app/hooks/useEnableFadeTransition";
+import { useEnableFadeTransition } from "@/hooks/useEnableFadeTransition";
 
 const lf = Libre_Franklin({ weight: "300", subsets: ["latin"] });
 const oxygen = Oxygen({ weight: "700", subsets: ["latin"] });

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEnableFadeTransition } from "@/app/hooks/useEnableFadeTransition";
+import { useEnableFadeTransition } from "@/hooks/useEnableFadeTransition";
 
 import Image from "next/image";
 import logo from "@/public/NHIBIT_Av03-White.png";
