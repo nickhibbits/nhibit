@@ -9,6 +9,6 @@
   }
 
   @include contentFadeMixin.content_fade(
-    $delay: calc(contentFadeMixin.$standard_delay)
+    $delay: contentFadeMixin.$standard_delay
   );
 }
