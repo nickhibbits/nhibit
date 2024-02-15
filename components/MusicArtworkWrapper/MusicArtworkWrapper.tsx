@@ -1,13 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import creeper from "@/public/album_artwork/creeper.jpg";
+
 import Link from "next/link";
 
 import styles from "@/components/MusicArtworkWrapper/MusicArtworkWrapper.module.scss";
 import { useEnableFadeTransition } from "@/hooks/useEnableFadeTransition";
 
-function MusicArtworkWrapper() {
+type MusicArtworkWrapperProps = {
+  src: any;
+  alt: any;
+  link: any;
+};
+
+function MusicArtworkWrapper({ src, alt, link }: MusicArtworkWrapperProps) {
   const { pageLoaded } = useEnableFadeTransition();
 
   const size = 300;
@@ -16,11 +22,11 @@ function MusicArtworkWrapper() {
       className={styles.artwork_wrapper}
       data-visible={pageLoaded ? "true" : "false"}
     >
-      <Link href={"https://soundcloud.com/nhibit/creeper"}>
+      <Link href={link}>
         <Image
-          src={creeper}
+          src={src}
           className={styles.image}
-          alt="Creeper single artwork"
+          alt={alt}
           height={size}
           width={size}
         />
