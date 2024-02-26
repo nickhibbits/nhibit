@@ -33,13 +33,13 @@
   position: relative !important;
   object-fit: contain;
   overflow: hidden;
-  filter: brightness(60%);
+  filter: brightness(80%);
 
   &_desktop {
     position: relative;
     width: 105% !important;
     height: unset !important;
-    filter: brightness(60%);
+    filter: brightness(80%);
   }
 }
 .content_wrapper {
