@@ -7,6 +7,7 @@
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
+  position: relative;
 
   @include mediaQueries.tablet-large {
     grid-template-columns: 40% 60%;
@@ -20,6 +21,7 @@
   overflow: hidden;
   height: 100%;
   width: 100%;
+
   mask-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 1) 60%,
@@ -29,6 +31,11 @@
   @include mediaQueries.tablet-large {
     z-index: 1;
     overflow: hidden;
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 1)
+    );
   }
 }
 

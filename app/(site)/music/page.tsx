@@ -3,6 +3,7 @@ import layoutStyles from "@/styles/layout.module.scss";
 import MusicArtworkWrapper from "@/components/MusicArtworkWrapper/MusicArtworkWrapper";
 
 import creeper from "@/public/album_artwork/creeper.jpg";
+import BackgroundImage from "@/components/BackgroundImage/BackgroundImage";
 
 const originals = [
   {
@@ -15,6 +16,7 @@ const originals = [
 function Music() {
   return (
     <main className={`${styles.main} ${layoutStyles.padding_wrapper} grid `}>
+      <BackgroundImage />
       <section className={styles.content_wrapper}>
         <h1 className={`${styles.title} header`}>Music</h1>
         {originals.map((original, i) => {
