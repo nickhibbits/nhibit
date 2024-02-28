@@ -8,7 +8,7 @@
   border-bottom: solid 0.5px variables.$color-neutral-200;
 
   @include contentFadeMixin.content_fade(
-    $delay: calc(contentFadeMixin.$standard_delay * 1.5)
+    $delay: contentFadeMixin.$standard_delay
   );
 
   @include mediaQueries.tablet {
@@ -29,9 +29,9 @@
 }
 
 .time {
-  flex-direction: column;
+  flex-direction: row;
 
-  @include mediaQueries.tablet {
-    flex-direction: row;
-  }
+  // @include mediaQueries.tablet {
+  //   flex-direction: row;
+  // }
 }

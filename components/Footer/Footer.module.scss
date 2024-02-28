@@ -3,16 +3,16 @@
 
 .footer {
   gap: 2rem;
-  min-height: 20rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
   border-top: solid 0.3px variables.$color-neutral-200;
-  background-color: variables.$color-neutral-600;
+  background-color: variables.$color-neutral-900;
+  overflow: hidden;
   @include mediaQueries.tablet {
     grid-auto-flow: row;
     grid-template-columns: 50% 50%;
     align-items: center;
-    min-height: 12rem;
+    overflow: hidden;
   }
 }
 

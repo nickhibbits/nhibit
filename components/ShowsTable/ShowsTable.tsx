@@ -4,27 +4,6 @@ const shows = [
   {
     city: "S Lake Tahoe",
     where: "Heavenly Ski Resort @ East Peak",
-    when: "2/11/23",
-    start: "12pm",
-    end: "2pm",
-  },
-  {
-    city: "S Lake Tahoe",
-    where: "Heavenly Ski Resort @ East Peak",
-    when: "2/18/23",
-    start: "12pm",
-    end: "2pm",
-  },
-  {
-    city: "S Lake Tahoe",
-    where: "Deep In Tahoe @ South of North Brewing",
-    when: "2/18/23",
-    start: "12pm",
-    end: "2pm",
-  },
-  {
-    city: "S Lake Tahoe",
-    where: "Heavenly Ski Resort @ East Peak",
     when: "3/3/23",
     start: "12pm",
     end: "2pm",

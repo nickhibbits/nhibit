@@ -5,9 +5,11 @@ import BackgroundImage from "@/components/BackgroundImage/BackgroundImage";
 
 function Shows() {
   return (
-    <main className={`${styles.main} ${layoutStyles.padding_wrapper} `}>
+    <main className={`${styles.main}  `}>
       <BackgroundImage />
-      <section className={styles.content_wrapper}>
+      <section
+        className={`${styles.content_wrapper} ${layoutStyles.padding_wrapper}`}
+      >
         <h1 className={`${styles.title} header`}>Shows</h1>
         <ShowsTable />
       </section>
