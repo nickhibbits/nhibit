@@ -1,4 +1,7 @@
 import ShowRow from "@/components/ShowsTable/ShowRow/ShowRow";
+import { useEnableFadeTransition } from "@/hooks/useEnableFadeTransition";
+import styles from "./ShowsTable.module.scss";
+import NoShowsMessage from "@/components/ShowsTable/NoShowsMessage/NoShowsMessage";
 
 const shows: any[] = [
   // {
@@ -19,17 +22,7 @@ const shows: any[] = [
 
 function ShowsTable() {
   if (shows.length === 0) {
-    return (
-      <p>
-        No shows scheduled. For bookings contact{" "}
-        <a
-          href="mailto:nhibitmusic@gmail.com"
-          style={{ textDecoration: "underline" }}
-        >
-          nhibitmusic@gmail.com
-        </a>
-      </p>
-    );
+    return <NoShowsMessage />;
   } else {
     return (
       <ul>
