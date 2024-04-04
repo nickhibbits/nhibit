@@ -25,6 +25,7 @@ function Music() {
               src={original.src}
               alt={original.alt}
               link={original.link}
+              key={i}
             />
           );
         })}
