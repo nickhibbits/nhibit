@@ -1,3 +1,5 @@
+@use "@/styles/variables";
+
 .main {
   // min-height: 10dvh;
   position: relative;
@@ -5,7 +7,7 @@
 }
 
 .content_wrapper {
-  padding-top: 7rem;
+  padding-top: variables.$content-nav-padding;
   padding-bottom: 8rem;
 }
 

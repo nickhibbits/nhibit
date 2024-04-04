@@ -1,10 +1,12 @@
+@use "@/styles/variables";
+
 .main {
   height: 100dvh;
   position: relative;
 }
 
 .content_wrapper {
-  padding-top: 8rem;
+  padding-top: variables.$content-nav-padding;
 }
 
 .title {
