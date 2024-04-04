@@ -1,0 +1,10 @@
+@use "@/styles/variables.scss";
+.main {
+  height: 100dvh;
+}
+
+.container {
+  width: 100%;
+  padding-top: variables.$nav-height;
+  height: 100%;
+}
