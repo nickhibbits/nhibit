@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import Link from "next/link";
 
-import styles from "@/components/MusicArtworkWrapper/MusicArtworkWrapper.module.scss";
+import styles from "./MusicArtworkWrapper.module.scss";
 import { useEnableFadeTransition } from "@/hooks/useEnableFadeTransition";
 
 type MusicArtworkWrapperProps = {
