@@ -1,5 +1,6 @@
 @use "@/styles/mediaQueries.scss";
 @use "@/styles/contentFadeMixin.scss";
+@use "@/styles/variables.scss";
 
 .bio_content {
   padding-bottom: 30px;
@@ -11,4 +12,10 @@
   @include contentFadeMixin.content_fade(
     $delay: contentFadeMixin.$standard_delay
   );
+}
+
+.h1 {
+  @include mediaQueries.tablet {
+    font-size: variables.$fs-800;
+  }
 }

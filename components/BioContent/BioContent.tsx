@@ -16,10 +16,10 @@ function BioContent() {
       className={`${styles.bio_content} ${oxygen.className} ${layoutStyles.padding_wrapper}`}
       data-visible={pageLoaded ? "true" : "false"}
     >
-      <h1 className="h1">Bio</h1>
+      <h1 className={styles.h1}>Bio</h1>
       <p className={lf.className}>
         Drawing creative inspiration from his native west coast house scene and
-        the minimal tech sound out of the UK, NHIBIT combines tight rhythms,
+        the minimal tech sound out of Europe, NHIBIT combines tight rhythms,
         driving basslines, and textures that creep and evolve to produce his own
         signature style.
         <br />
@@ -28,7 +28,7 @@ function BioContent() {
         floor and his listeners' focus locked. <br />
         <br />
         If you're seeking a fresh vibe with hypnotic grooves and lush melodies,
-        you're in the right place.
+        look no further.
       </p>
     </section>
   );
