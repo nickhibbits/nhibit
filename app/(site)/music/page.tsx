@@ -1,6 +1,9 @@
 import styles from "@/app/(site)/music/page.module.scss";
 import layoutStyles from "@/styles/layout.module.scss";
 import creeper from "@/public/album_artwork/creeper.jpg";
+import clarityDose1 from "@/public/clarityDose_artwork/1.jpg";
+import clarityDose2 from "@/public/clarityDose_artwork/2.jpg";
+import clarityDose3 from "@/public/clarityDose_artwork/3.jpg";
 
 import BackgroundImage from "@/components/BackgroundImage/BackgroundImage";
 import ReleaseList from "@/components/Music/ReleaseList/ReleaseList";
@@ -15,8 +18,18 @@ const originals = [
 
 const mixes = [
   {
-    src: "",
+    src: clarityDose1,
     alt: "Clarity Dose 01 Artwork",
+    link: "",
+  },
+  {
+    src: clarityDose2,
+    alt: "Clarity Dose 02 Artwork",
+    link: "",
+  },
+  {
+    src: clarityDose3,
+    alt: "Clarity Dose 03 Artwork",
     link: "",
   },
 ];

@@ -1,8 +1,9 @@
 @use "@/styles/variables";
 
 .main {
-  height: 100dvh;
+  min-height: 100dvh;
   position: relative;
+  padding-bottom: 5rem;
 }
 
 .content_wrapper {
