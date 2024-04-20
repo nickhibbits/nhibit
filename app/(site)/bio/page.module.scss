@@ -8,10 +8,12 @@
   overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
+  padding-bottom: 5rem;
 
   @include mediaQueries.tablet-large {
     grid-template-columns: 40% 60%;
     height: 100dvh;
+    padding-bottom: 0;
   }
 }
 

@@ -12,7 +12,7 @@ function ReleaseList({
   return (
     <div className={styles.release_list}>
       <h2 className={`${styles.list_title} subheader`}>{title}</h2>
-      <div className={`${styles.release_wrapper} flex`}>
+      <div className={`${styles.release_list_wrapper} flex`}>
         {releases.map((release, i) => {
           return (
             <MusicArtworkWrapper
