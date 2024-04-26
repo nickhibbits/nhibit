@@ -1,28 +1,40 @@
 @use "@/styles/mediaQueries.scss";
 
 @keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
+  // 0% {
+  //   opacity: 0;
+  // }
 
-  20% {
-    opacity: 0;
-  }
+  // 20% {
+  //   opacity: 0;
+  // }
 
-  30% {
-    opacity: 1;
-  }
+  // 30% {
+  //   opacity: 1;
+  // }
 
-  75% {
-    opacity: 1;
-  }
+  // 75% {
+  //   opacity: 1;
+  // }
 
-  85% {
-    opacity: 0;
-  }
+  // 85% {
+  //   opacity: 0;
+  // }
 
+  // 100% {
+  //   opacity: 0;
+  // }
+
+  0%,
+  15%,
+  85%,
   100% {
     opacity: 0;
+  }
+
+  30%,
+  75% {
+    opacity: 1;
   }
 }
 
@@ -48,12 +60,12 @@
 
   &_transition {
     &_1 {
-      // don't animate to avoid issues with stacking context
+      // don't animate to avoid timing issues due to stacking context
     }
 
     &_2 {
       animation: fadeInOut 16s infinite;
-      animation-delay: 3s;
+      animation-delay: 2s;
       opacity: 0;
     }
   }
