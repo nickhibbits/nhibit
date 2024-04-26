@@ -1,4 +1,31 @@
 @use "@/styles/mediaQueries.scss";
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .bg_image_wrapper {
   position: absolute;
   z-index: 1;
@@ -21,11 +48,13 @@
 
   &_transition {
     &_1 {
-      display: none;
+      // don't animate to avoid issues with stacking context
     }
 
     &_2 {
-      filter: brightness(130%);
+      animation: fadeInOut 16s infinite;
+      animation-delay: 3s;
+      opacity: 0;
     }
   }
 }
@@ -46,4 +75,8 @@
   position: relative;
   width: 150% !important;
   height: unset !important;
+}
+
+.texture {
+  filter: brightness(130%);
 }

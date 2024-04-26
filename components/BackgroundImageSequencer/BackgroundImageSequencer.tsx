@@ -32,7 +32,7 @@ function BackgroundImageSequencer() {
         <Image
           width={1700}
           height={1400}
-          className={styles.bg_image}
+          className={`${styles.bg_image} ${styles.texture}`}
           src={gradient}
           alt="texture"
         />
@@ -41,7 +41,7 @@ function BackgroundImageSequencer() {
         className={`${styles.bg_image_wrapper_desktop} ${styles.bg_image_wrapper_transition_2}`}
       >
         <Image
-          className={` ${styles.texture_desktop}`}
+          className={` ${styles.texture_desktop} ${styles.texture}`}
           src={gradient}
           alt="texture"
         />
