@@ -1,0 +1,49 @@
+@use "@/styles/mediaQueries.scss";
+.bg_image_wrapper {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+
+  @include mediaQueries.tablet-large {
+    display: none;
+  }
+
+  &_desktop {
+    display: none;
+
+    @include mediaQueries.tablet-large {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      overflow: hidden;
+    }
+  }
+
+  &_transition {
+    &_1 {
+      display: none;
+    }
+
+    &_2 {
+      filter: brightness(130%);
+    }
+  }
+}
+
+.bg_image {
+  position: relative !important;
+  object-fit: contain;
+  overflow: hidden;
+
+  &_desktop {
+    position: relative;
+    width: 110% !important;
+    height: unset !important;
+  }
+}
+
+.texture_desktop {
+  position: relative;
+  width: 150% !important;
+  height: unset !important;
+}

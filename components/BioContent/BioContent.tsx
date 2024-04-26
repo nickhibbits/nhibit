@@ -23,7 +23,7 @@ function BioContent() {
         driving basslines, and textures that creep and evolve to produce his own
         signature style.
         <br />
-        <br /> Blending club heaters and emotive arrangements into all his live
+        <br /> Blending club heaters and emotive arrangements into his live
         mixes and original productions, he keeps the energy up on the dance
         floor and his listeners' focus locked. <br />
         <br />
